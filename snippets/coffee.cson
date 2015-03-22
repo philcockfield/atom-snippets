@@ -1,9 +1,19 @@
 '.source.coffee':
+
   'Function':
-    'prefix': 'f'
+    'prefix': 'ff'
     'body': '-> '
+
+  'Function (Args)':
+    'prefix': 'fa'
+    'body': '(${1:args}) -> $0'
 
 
   'Bound Function':
     'prefix': 'bf'
     'body': '=> '
+
+
+  'Bound Function (Args)':
+    'prefix': 'bfa'
+    'body': '(${1:args}) => $0'
