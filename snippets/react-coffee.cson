@@ -1,0 +1,29 @@
+'.source.coffee':
+  'React.createClass':
+    'prefix': 'rclass'
+    'body':
+      """
+      ${1:ClassName} = React.createClass
+        render: ->
+          return (
+            $0
+          )
+      """
+
+
+  '<tag>':
+    'prefix': '<'
+    'body':
+      """
+      <${1:tag}>$0</${1:tag}>
+
+
+      """
+
+
+  'className':
+    'prefix': 'cn'
+    'body':
+      """
+      className='$1'$0
+      """

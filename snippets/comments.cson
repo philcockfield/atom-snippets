@@ -2,15 +2,23 @@
 '.source.coffee':
   'Comment - Horizontal Rule':
     'prefix': 'hr'
-    'body': """# ----------------------------------------------------------------------"""
+    'body': '# ----------------------------------------------------------------------------'
+
 
   '@param':
     'prefix': 'pm'
-    'body': """@param $0"""
-  
+    'body': "@param $0"
+
+
   '@returns':
     'prefix': 'pr'
-    'body': """@returns $0"""
+    'body': "@returns $0"
+
+
+  'Comment':
+    'prefix': 'q'
+    'body': "# $0"
+
 
   'Comment Block':
     'prefix': 'qq'

@@ -2,20 +2,47 @@
 '.source.coffee':
   'console.error':
     'prefix': 'ce'
-    'body': """console.error '${1:error}'"""
+    'body':
+      """
+      console.error '${1:error}'
+      """
+
 
   'console.log':
     'prefix': 'cl'
-    'body': """console.log '${1:title}', ${2:$1}$0"""
+    'body':
+      """
+      console.log '${1:title}', ${2:$1}$0
+      """
+
 
   'console.log (text only)':
     'prefix': 'cll'
-    'body': """console.log $0"""
+    'body':
+      """
+      console.log $0
+      """
+
+
+  'console.log (new line)':
+    'prefix': 'cln'
+    'body':
+      """
+      console.log ''
+      """
+
 
   'debugger':
     'prefix': 'debug'
-    'body': """debugger"""
+    'body':
+      """
+      debugger
+      """
+
 
   'trace':
     'prefix': 'trace'
-    'body': """console.trace()"""
+    'body':
+      """
+      console.trace()
+      """

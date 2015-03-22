@@ -3,6 +3,8 @@
   'stampit.compose':
     'prefix': 'scom'
     'body': '${1:MyComposedStamp} = stampit.compose($2)'
+
+
   'stampit().enclose':
     'prefix': 'senc'
     'body': """

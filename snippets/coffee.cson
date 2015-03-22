@@ -1,0 +1,9 @@
+'.source.coffee':
+  'Function':
+    'prefix': 'f'
+    'body': '-> '
+
+
+  'Bound Function':
+    'prefix': 'bf'
+    'body': '=> '

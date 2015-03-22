@@ -11,6 +11,8 @@
           api: {}
           helpers: {}
           events: {}"""
+
+
   'Ctrl Methods':
     'prefix': 'ctrlm'
     'body': """
@@ -22,9 +24,15 @@
       helpers: {}
       events: {}
     """
+
+
   'Reactive Property':
     'prefix': 'prop'
     'body': """${1:prop}: (value) -> @prop '$1', value, default:${2:default}"""
+
+
+# ----------------------------------------------------------------------------
+
 
 '.text.html':
   'Ctrl':

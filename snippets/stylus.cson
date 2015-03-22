@@ -1,0 +1,6 @@
+'.source.stylus':
+
+
+  'stylus.bg':
+    'prefix': 'bg'
+    'body': "background $RED"
