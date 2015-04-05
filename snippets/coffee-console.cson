@@ -1,7 +1,7 @@
 # Console
 '.source.coffee':
   'console.error':
-    'prefix': 'ce'
+    'prefix': 'le'
     'body':
       """
       console.error '${1:error}'
@@ -9,15 +9,15 @@
 
 
   'console.log':
-    'prefix': 'cl'
+    'prefix': 'll'
     'body':
       """
-      console.log '${1:title}', ${2:$1}$0
+      console.log '${1:title}', ${2:$1} $0
       """
 
 
   'console.log (text only)':
-    'prefix': 'cll'
+    'prefix': 'l'
     'body':
       """
       console.log $0
@@ -25,10 +25,18 @@
 
 
   'console.log (new line)':
-    'prefix': 'cln'
+    'prefix': 'ln'
     'body':
       """
       console.log ''
+      """
+
+
+  'console.log(---)':
+    'prefix': 'lhr'
+    'body':
+      """
+      console.log '-------------------------------------------'
       """
 
 

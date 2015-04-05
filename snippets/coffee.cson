@@ -1,8 +1,8 @@
 '.source.coffee':
-
-  'Function':
+  'Function (->)':
     'prefix': 'ff'
     'body': '-> '
+
 
   'Function (Args)':
     'prefix': 'fa'
@@ -17,3 +17,8 @@
   'Bound Function (Args)':
     'prefix': 'bfa'
     'body': '(${1:args}) => $0'
+
+
+  'Use Strict':
+    'prefix': 'ustr'
+    'body': "'use strict'"

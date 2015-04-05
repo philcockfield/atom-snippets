@@ -27,3 +27,13 @@
       $0
       ###
     """
+
+
+  'Comment: Setup initial conditions':
+    'prefix': 'setup'
+    'body': "# Setup initial conditions."
+
+
+  'Comment: Finish Up':
+    'prefix': 'finish'
+    'body': "# Finish up."

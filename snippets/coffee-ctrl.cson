@@ -15,7 +15,8 @@
 
   'Ctrl Methods':
     'prefix': 'ctrlm'
-    'body': """
+    'body':
+      """
       init: ->
       ready: ->
       destroyed: ->
@@ -23,12 +24,15 @@
       api: {}
       helpers: {}
       events: {}
-    """
+      """
 
 
   'Reactive Property':
     'prefix': 'prop'
-    'body': """${1:prop}: (value) -> @prop '$1', value, default:${2:default}"""
+    'body':
+      """
+      ${1:prop}: (value) -> @prop '$1', value, default:${2:default}
+      """
 
 
 # ----------------------------------------------------------------------------
@@ -37,7 +41,15 @@
 '.text.html':
   'Ctrl':
     'prefix': 'ctrl'
-    'body': """{{> ctrl type='$1'}}"""
+    'body':
+      """
+      {{> ctrl type='$1'}}
+      """
+
+
   'Ctrl (with data)':
     'prefix': 'ctrld'
-    'body': """{{> ctrl type='$1' data=${2:data} }}"""
+    'body':
+      """
+      {{> ctrl type='$1' data=${2:data} }}
+      """
