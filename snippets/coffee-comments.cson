@@ -37,3 +37,9 @@
   'Comment: Finish Up':
     'prefix': 'finish'
     'body': "# Finish up."
+
+
+
+  'Comment: TEMP':
+    'prefix': 'te'
+    'body': "# TEMP $0"

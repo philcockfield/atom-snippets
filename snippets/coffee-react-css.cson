@@ -1,0 +1,39 @@
+'.source.coffee':
+  'css: rgba':
+    'prefix': 'col'
+    'body':
+      """
+      rgba(${1:0}, ${2:0}, ${3:0}, 0.${4:3})$0
+      """
+
+
+  'css: RED(0.3)':
+    'prefix': 'RED'
+    'body':
+      """
+      'rgba(255, 0, 0, 0.1)'$0
+      """
+
+
+  'css: background':
+    'prefix': 'bg'
+    'body':
+      """
+      background: $0
+      """
+
+  'css: background RED':
+    'prefix': 'bgr'
+    'body':
+      """
+      background: 'rgba(255, 0, 0, 0.1)'$0
+      """
+
+
+
+  'css: Absolute':
+    'prefix': 'abs'
+    'body':
+      """
+      Absolute: '${1:0 0 0 0}'$0
+      """

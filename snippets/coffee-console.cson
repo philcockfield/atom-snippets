@@ -41,7 +41,7 @@
 
 
   'debugger':
-    'prefix': 'debug'
+    'prefix': 'deb'
     'body':
       """
       debugger

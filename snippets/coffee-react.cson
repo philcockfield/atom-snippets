@@ -31,3 +31,30 @@
       """
       className='$1'$0
       """
+
+
+
+  'jsx':
+    'prefix': 'jsx'
+    'body':
+      """
+      React = require('react')
+      css = require('react-css')
+
+
+
+
+      module.exports = React.createClass
+        displayName: '${1:Name}'
+        mixins: [ css.mixin ]
+
+        style: -> @css 'base'
+        classes: ->
+          'base':
+            root: {}
+
+
+        render: ->
+          <div is="root">$0</div>
+
+      """
