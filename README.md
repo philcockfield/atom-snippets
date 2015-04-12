@@ -1,8 +1,4 @@
-# my-snippets package
-
-A collection of snippets I use on a daily basis.
-
-I don't plan on releasing this for to the Atom packaging system.
+# Atom Snippets
 
 Manual Installation (on Mac)
 
@@ -10,4 +6,4 @@ Manual Installation (on Mac)
 2. cd ~/.atom/packages
 3. git clone https://github.com/hharnisc/my-snippets.git
 
-If you've got atom open you'll need to reload the window.
+If you've got atom open you'll need to reload the window (`CMD + SHIFT + P`)
