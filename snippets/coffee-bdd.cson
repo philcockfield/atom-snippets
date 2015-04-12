@@ -99,10 +99,6 @@
     """
 
 
-  '@subtitle (BDD)':
-    'prefix': 'subtitle'
-    'body': "@subtitle '${1}'$0"
-
 
   '@title (BDD)':
     'prefix': 'title'

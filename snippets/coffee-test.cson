@@ -39,3 +39,12 @@
       """
       expect(${1:value}).not.to.eql ${2:result} $0
       """
+
+
+  'expect: to throw':
+    'prefix': 'ett'
+    'body':
+      """
+      fn = -> $0
+      expect(fn).to.throw(/${1:error-text}/)
+      """

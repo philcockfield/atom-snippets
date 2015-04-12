@@ -35,5 +35,5 @@
     'prefix': 'abs'
     'body':
       """
-      Absolute: '${1:0 0 0 0}'$0
+      Absolute: "${1:0 0 0 0}"$0
       """
