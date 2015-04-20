@@ -6,4 +6,5 @@ Manual Installation (on Mac)
 2. cd ~/.atom/packages
 3. git clone https://github.com/hharnisc/my-snippets.git
 
-If you've got atom open you'll need to reload the window (`CMD + SHIFT + P`)
+If you've got atom open you'll need to reload the window
+(`CMD + SHIFT + P` => "Reload")

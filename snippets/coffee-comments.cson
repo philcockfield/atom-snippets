@@ -30,12 +30,12 @@
 
 
   'Comment: Setup initial conditions':
-    'prefix': 'setup'
+    'prefix': 'set'
     'body': "# Setup initial conditions."
 
 
   'Comment: Finish Up':
-    'prefix': 'finish'
+    'prefix': 'fin'
     'body': "# Finish up."
 
 

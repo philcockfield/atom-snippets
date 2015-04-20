@@ -1,7 +1,7 @@
 '.source.coffee':
 
   'require expect':
-    'prefix': 're'
+    'prefix': 'rre'
     'body':
       """
       expect = require('chai').expect

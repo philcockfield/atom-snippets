@@ -15,7 +15,7 @@
 
 
   'require lodash':
-    'prefix': 'rl'
+    'prefix': 'rrl'
     'body':
       """
       _ = require('lodash')$0

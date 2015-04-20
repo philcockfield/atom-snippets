@@ -1,13 +1,4 @@
 '.source.coffee':
-  'React.createClass':
-    'prefix': 'rclass'
-    'body':
-      """
-      ${1:ClassName} = React.createClass
-        render: ->
-          <div>$0</div>
-      """
-
 
   '<tag></tag>':
     'prefix': '<'
@@ -15,6 +6,7 @@
       """
       <${1:tag}>$0</${1:tag}>
       """
+
 
   '<tag/>':
     'prefix': '<<'
@@ -57,4 +49,85 @@
         render: ->
           <div is="root">$0</div>
 
+      """
+
+
+
+  'jsx':
+    'prefix': 'jsx'
+    'body':
+      """
+      React = require('react')
+      css = require('react-css')
+
+
+
+
+      module.exports = React.createClass
+        displayName: '${1:Name}'
+        mixins: [ css.mixin ]
+
+        style: -> @css('base')
+        classes: ->
+          'base':
+            root: {}
+
+
+        render: ->
+          <div is="root">$0</div>
+
+      """
+
+
+
+  'React class CSS':
+    'prefix': 'rrcss'
+    'body':
+      """
+      mixins: [ css.mixin ]
+
+      style: -> @css('base')
+      classes: ->
+        'base':
+          root: {}
+      """
+
+
+
+  'React.createClass':
+    'prefix': 'rrcl'
+    'body':
+      """
+      ${1:ClassName} = React.createClass
+        displayName: ${1:ClassName}
+
+        render: ->
+          <div>${1:ClassName}$0</div>
+      """
+
+
+
+
+
+  'React Lifecycle Methods':
+    'prefix': 'rrls'
+    'body':
+      """
+      componentWillMount: ->
+      componentDidMount: ->
+      componentWillReceiveProps: (nextProps) ->
+      shouldComponentUpdate: (nextProps, nextState) ->
+      componentWillUpdate: (nextProps, nextState) ->
+      componentDidUpdate: (prevProps, prevState) ->
+      componentWillUnmount: ->
+
+      """
+
+
+
+  'React: getDOMNode()':
+    'prefix': 'gdn'
+    'body':
+      """
+      getDOMNode()
       """

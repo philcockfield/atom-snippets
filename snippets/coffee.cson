@@ -22,3 +22,16 @@
   'Use Strict':
     'prefix': 'ustr'
     'body': "'use strict'"
+
+
+  'Undefined':
+    'prefix': 'und'
+    'body': "undefined"
+
+
+  'util.delay':
+    'prefix': 'ud'
+    'body':
+      """
+      util.delay $1-> $0
+      """
