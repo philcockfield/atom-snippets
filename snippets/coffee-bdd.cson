@@ -19,24 +19,6 @@
     'body': """before -> $0"""
 
 
-  'Describe (BDD:Async)':
-    'prefix': 'desd'
-    'body':
-      """
-      describe '${1:suite}', (done) ->
-        $0
-      """
-
-
-  'Describe Section (BDD)':
-    'prefix': 'dessection'
-    'body':
-      """
-      describe.section '${1:suite}', ->
-        $0
-      """
-
-
   'Describe (BDD)':
     'prefix': 'des'
     'body':
@@ -46,13 +28,22 @@
       """
 
 
-  'it (BDD:async)':
-    'prefix': 'itd'
+  'Describe (BDD:Async)':
+    'prefix': 'dess'
     'body':
       """
-      it '${1:does}', (done) ->
+      describe '${1:suite}', (done) ->
         $0
       """
+
+  'Section (BDD)':
+    'prefix': 'sect'
+    'body':
+      """
+      section '${1:name}', ->
+        $0
+      """
+
 
 
   'it (BDD)':
@@ -60,6 +51,15 @@
     'body':
       """
       it '${1:does}', ->
+        $0
+      """
+
+
+  'it (BDD:async)':
+    'prefix': 'itd'
+    'body':
+      """
+      it '${1:does}', (done) ->
         $0
       """
 

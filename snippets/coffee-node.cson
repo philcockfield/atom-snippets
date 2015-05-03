@@ -7,7 +7,7 @@
       """
 
   'require':
-    'prefix': 'rrr'
+    'prefix': 'rer'
     'body':
       """
       require('${1}')$0
@@ -15,8 +15,16 @@
 
 
   'require lodash':
-    'prefix': 'rrl'
+    'prefix': 'rell'
     'body':
       """
       _ = require('lodash')$0
+      """
+
+
+  'require react':
+    'prefix': 'rerr'
+    'body':
+      """
+      React = require('react')$0
       """

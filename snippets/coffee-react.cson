@@ -57,40 +57,28 @@
     'prefix': 'jsx'
     'body':
       """
+      'use strict'
       React = require('react')
       css = require('react-css')
 
 
+      class ${1:Name} extends React.Component
+        css: css.inline
 
-
-      module.exports = React.createClass
-        displayName: '${1:Name}'
-        mixins: [ css.mixin ]
-
-        style: -> @css('base')
+        styles: -> @css()
         classes: ->
-          'base':
+          'default':
             root: {}
 
-
         render: ->
-          <div is="root">$0</div>
+          <div is="root">
+            ${1:Name}
+          </div>$0
 
+
+      module.exports = ${1:Name}
       """
 
-
-
-  'React class CSS':
-    'prefix': 'rrcss'
-    'body':
-      """
-      mixins: [ css.mixin ]
-
-      style: -> @css('base')
-      classes: ->
-        'base':
-          root: {}
-      """
 
 
 
@@ -98,11 +86,31 @@
     'prefix': 'rrcl'
     'body':
       """
-      ${1:ClassName} = React.createClass
-        displayName: ${1:ClassName}
+      class ${1:Name} extends React.Component
+        css: css.inline
+
+        styles: -> @css()
+        classes: ->
+          'default':
+            root: {}
 
         render: ->
-          <div>${1:ClassName}$0</div>
+          <div is="root">
+            ${1:Name}
+          </div>$0
+      """
+
+
+
+  'React.createClass':
+    'prefix': 'csstest'
+    'prefix': 'csstest'
+    'body':
+      """
+      background: 'rgba(255, 0, 0, 0.1)'
+      border: 'dashed 1px rgba(0, 0, 0, 0.3)'
+      padding: 20
+      borderRadius: 5
       """
 
 
@@ -110,7 +118,7 @@
 
 
   'React Lifecycle Methods':
-    'prefix': 'rrls'
+    'prefix': 'rrlife'
     'body':
       """
       componentWillMount: ->
@@ -130,4 +138,12 @@
     'body':
       """
       getDOMNode()
+      """
+
+
+  'React: dangerouslySetInnerHTML':
+    'prefix': 'danger'
+    'body':
+      """
+      <span dangerouslySetInnerHTML={{__html: ${1:html}}} />$0
       """
