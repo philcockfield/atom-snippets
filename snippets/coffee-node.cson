@@ -7,7 +7,7 @@
       """
 
   'require':
-    'prefix': 'rer'
+    'prefix': 'rrr'
     'body':
       """
       require('${1}')$0

@@ -1,0 +1,15 @@
+'.source.js':
+  'module-exports':
+    'prefix': 'me'
+    'body':
+      """
+      module.exports = $0
+      """
+
+
+  'require':
+    'prefix': 'rrr'
+    'body':
+      """
+      require('${1}')$0
+      """
