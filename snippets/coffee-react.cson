@@ -148,3 +148,32 @@
       """
       <${1:span} dangerouslySetInnerHTML={{__html: ${2:html}}} />$0
       """
+
+
+
+  'React: PropTypes':
+    'prefix': 'rproptypes'
+    'body':
+      """
+      @propTypes:
+        ${1:isEnabled}: React.PropTypes.${2:bool}
+
+      @defaultProps:
+        ${1:isEnabled}: ${3:true} $0
+      """
+
+
+  'React: PropType':
+    'prefix': 'rpt'
+    'body':
+      """
+      ${1:propName}: React.PropTypes.$0
+      """
+
+
+  'React: Descructuring Props':
+    'prefix': 'dp'
+    'body':
+      """
+      \{ $0 \} = @props
+      """
