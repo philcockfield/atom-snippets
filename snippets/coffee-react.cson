@@ -45,6 +45,9 @@
       { Foo } = require('ui-harness/helpers')
 
 
+      ###
+
+      ###
       class ${1:Name} extends React.Component
         css: css.inline
 
