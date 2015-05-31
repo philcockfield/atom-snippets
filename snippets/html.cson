@@ -1,0 +1,23 @@
+'.text.html':
+  '<tag></tag>':
+    'prefix': '<'
+    'body':
+      """
+      <${1:tag}>$0</${1:tag}>
+      """
+
+
+  '<tag/>':
+    'prefix': '<<'
+    'body':
+      """
+      <${1:tag}/>$0
+      """
+
+
+  'class':
+    'prefix': 'cl'
+    'body':
+      """
+      class='$0'
+      """

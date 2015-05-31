@@ -1,4 +1,22 @@
 '.source.coffee':
+  'New Spec File':
+    'prefix': 'rspec'
+    'body':
+      """
+      'use strict'
+      React = require('react')
+      { Foo } = require('ui-harness/helpers')
+
+
+      describe '${1:suite}', ->
+        @subtitle '${2:description}'
+        before ->
+          @load <Foo>Suite: ${1:suite}</Foo> $0
+          .align '${3:center top}'
+
+      """
+
+
   'After Each (BDD)':
     'prefix': 'ae'
     'body': "afterEach -> $0"

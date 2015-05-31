@@ -16,11 +16,18 @@
       """
 
 
-  '<div>':
-    'prefix': 'div'
+  '<div is="">':
+    'prefix': 'divis'
     'body':
       """
-      <div className="${1:class}">$0</div>
+      <div is="${1:class}">$0</div>
+      """
+
+  '<span is="">':
+    'prefix': 'spanis'
+    'body':
+      """
+      <span is="${1:class}">$0</span>
       """
 
 
@@ -51,14 +58,15 @@
       class ${1:Name} extends React.Component
         css: css.inline
 
-        styles: -> @css()
         classes: ->
           'default':
             root: {}
 
+        styles: -> @css()
+
         render: ->
           <div is="root">
-            <Foo text="${1:Name}"></Foo>
+            <Foo>${1:Name}</Foo>
           </div>$0
 
 
@@ -138,11 +146,11 @@
 
 
 
-  'React: getDOMNode()':
-    'prefix': 'gdn'
+  'React: findDOMNode()':
+    'prefix': 'rdn'
     'body':
       """
-      getDOMNode()
+      React.findDOMNode(${1:component}) $0
       """
 
 
