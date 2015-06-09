@@ -5,13 +5,12 @@
       """
       'use strict'
       React = require('react')
-      { Foo } = require('ui-harness/helpers')
 
 
       describe '${1:suite}', ->
         @subtitle '${2:description}'
         before ->
-          @load <Foo>Suite: ${1:suite}</Foo> $0
+          @load <div>${1:suite}</div> $0
           .align '${3:center top}'
 
       """

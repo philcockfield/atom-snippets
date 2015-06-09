@@ -1,11 +1,4 @@
 '.source.coffee':
-  'module-exports':
-    'prefix': 'me'
-    'body':
-      """
-      module.exports = $0
-      """
-
   'require':
     'prefix': 'rrr'
     'body':
@@ -22,9 +15,25 @@
       """
 
 
+  'require core-util':
+    'prefix': 'reu'
+    'body':
+      """
+      util = require('core-util')$0
+      """
+
+
   'require react':
     'prefix': 'rerr'
     'body':
       """
       React = require('react')$0
+      """
+
+
+  'require PropTypes':
+    'prefix': 'rep'
+    'body':
+      """
+      { PropTypes } = require('core-util/react')$0
       """

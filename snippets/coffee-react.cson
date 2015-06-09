@@ -49,11 +49,12 @@
       'use strict'
       React = require('react')
       css = require('react-css')
+      { PropTypes } = require('core-util/react')
       { Foo } = require('ui-harness/helpers')
 
 
       ###
-
+      $0
       ###
       class ${1:Name} extends React.Component
         css: css.inline
@@ -67,7 +68,7 @@
         render: ->
           <div is="root">
             <Foo>${1:Name}</Foo>
-          </div>$0
+          </div>
 
 
       module.exports = ${1:Name}
@@ -120,7 +121,7 @@
     'prefix': 'csstest'
     'body':
       """
-      background: 'rgba(255, 0, 0, 0.1)'
+      background: 'rgba(255, 0, 0, 0.1)' #RED
       border: 'dashed 1px rgba(0, 0, 0, 0.3)'
       padding: 20
       borderRadius: 5
@@ -168,7 +169,7 @@
     'body':
       """
       @propTypes:
-        ${1:isEnabled}: React.PropTypes.${2:bool}
+        ${1:isEnabled}: PropTypes.${2:bool}
 
       @defaultProps:
         ${1:isEnabled}: ${3:true} $0
@@ -179,7 +180,7 @@
     'prefix': 'rpt'
     'body':
       """
-      ${1:propName}: React.PropTypes.$0
+      ${1:propName}: PropTypes.$0
       """
 
 
