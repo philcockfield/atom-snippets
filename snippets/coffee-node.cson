@@ -1,0 +1,7 @@
+'.source.coffee':
+  'module-exports':
+    'prefix': 'me'
+    'body':
+      """
+      module.exports = $0
+      """
