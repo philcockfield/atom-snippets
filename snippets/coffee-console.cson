@@ -39,6 +39,14 @@
       console.log '-------------------------------------------'
       """
 
+  'console.warn':
+    'prefix': 'lw'
+    'body':
+      """
+      console.warn '${1:title}', ${2:$1} $0
+      """
+
+
 
   'debugger':
     'prefix': 'deb'

@@ -8,7 +8,9 @@
 
 
       describe '${1:suite}', ->
-        @subtitle '${2:description}'
+        @subtitle '''
+                  ${2:description}
+                  '''
         before ->
           @load <div>${1:suite}</div> $0
           .align '${3:center top}'

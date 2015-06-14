@@ -7,7 +7,7 @@
       """
 
 
-  'require lodash':
+  'require: lodash':
     'prefix': 'rell'
     'body':
       """
@@ -15,7 +15,7 @@
       """
 
 
-  'require core-util':
+  'require: core-util':
     'prefix': 'reu'
     'body':
       """
@@ -23,7 +23,7 @@
       """
 
 
-  'require react':
+  'require: react':
     'prefix': 'rerr'
     'body':
       """
@@ -31,9 +31,17 @@
       """
 
 
-  'require PropTypes':
-    'prefix': 'rep'
+  'require: PropTypes':
+    'prefix': 'rept'
     'body':
       """
       { PropTypes } = require('core-util/react')$0
+      """
+
+
+  'require: ui-harness/helpers':
+    'prefix': 'rehelp'
+    'body':
+      """
+      { Foo, lorem, LogValue } = require('ui-harness/helpers')$0
       """

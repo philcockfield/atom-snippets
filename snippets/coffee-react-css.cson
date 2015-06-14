@@ -31,6 +31,14 @@
       """
 
 
+  'css: border':
+    'prefix': 'border'
+    'body':
+      """
+      border: 'solid 1px rgba(0, 0, 0, 0.${1:3})'$0
+      """
+
+
 
   'css: Absolute':
     'prefix': 'abs'

@@ -50,7 +50,6 @@
       React = require('react')
       css = require('react-css')
       { PropTypes } = require('core-util/react')
-      { Foo } = require('ui-harness/helpers')
 
 
       ###
@@ -59,15 +58,16 @@
       class ${1:Name} extends React.Component
         css: css.inline
 
+        styles: -> @css()
         classes: ->
           'default':
-            root: {}
+            root:
+              background: 'rgba(255, 0, 0, 0.1)' #RED
 
-        styles: -> @css()
 
         render: ->
           <div is="root">
-            <Foo>${1:Name}</Foo>
+            ${1:Name}
           </div>
 
 
@@ -76,23 +76,6 @@
 
 
 
-  'jsx simple':
-    'prefix': 'jsxs'
-    'body':
-      """
-      'use strict'
-      React = require('react')
-
-
-      class ${1:Name} extends React.Component
-        render: ->
-          <div>
-            ${1:Name}
-          </div>$0
-
-
-      module.exports = ${1:Name}
-      """
 
 
 
