@@ -1,14 +1,5 @@
 '.source.coffee':
 
-  'require expect':
-    'prefix': 'rre'
-    'body':
-      """
-      expect = require('chai').expect
-      """
-
-
-
   'expect: to.equal':
     'prefix': 'exe'
     'body':

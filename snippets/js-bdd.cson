@@ -1,0 +1,39 @@
+'.source.js':
+  'Describe (BDD)':
+    'prefix': 'des'
+    'body':
+      """
+      describe('${1:suite}', () => {
+        $0
+      });
+      """
+
+
+  'Describe (BDD:Async)':
+    'prefix': 'dess'
+    'body':
+      """
+      describe('${1:suite}', (done) => {
+        $0
+      });
+      """
+
+
+  'it (BDD)':
+    'prefix': 'it'
+    'body':
+      """
+      it('${1:does}', () => {
+        $0
+      });
+      """
+
+
+  'it (BDD:async)':
+    'prefix': 'itd'
+    'body':
+      """
+      it('${1:does}', (done) => {
+        $0
+      });
+      """

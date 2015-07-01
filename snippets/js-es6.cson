@@ -1,0 +1,8 @@
+'.source.js':
+  '=>':
+    'prefix': 'ff'
+    'body': '() => $0'
+
+  '(args) =>':
+    'prefix': 'fa'
+    'body': '($1) => $0'

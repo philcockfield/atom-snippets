@@ -1,0 +1,14 @@
+'.source.js':
+  'require':
+    'prefix': 'rrr'
+    'body':
+      """
+      require('${1}')$0
+      """
+
+  'require expect':
+    'prefix': 'reex'
+    'body':
+      """
+      var { expect } = require('chai')
+      """

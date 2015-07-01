@@ -7,6 +7,14 @@
       """
 
 
+  'require expect':
+    'prefix': 'reex'
+    'body':
+      """
+      expect = require('chai').expect
+      """
+
+
   'require: lodash':
     'prefix': 'rell'
     'body':
@@ -43,5 +51,21 @@
     'prefix': 'rehelp'
     'body':
       """
-      { Foo, lorem, LogValue } = require('ui-harness/helpers')$0
+      { Foo, lorem, time } = require('ui-harness/helpers')$0
+      """
+
+
+  'require: ui-harness/helpers (lorem | time)':
+    'prefix': 'relorem'
+    'body':
+      """
+      { lorem, time } = require('ui-harness/helpers')$0
+      """
+
+
+  'require: core-ui/components/':
+    'prefix': 'recore'
+    'body':
+      """
+      ${1:Name} = require('core-ui/components/${1:Name}')$0
       """
