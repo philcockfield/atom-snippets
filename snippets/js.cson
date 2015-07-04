@@ -6,11 +6,78 @@
       'use strict'
       """
 
+  'this.':
+    'prefix': 'th'
+    'body':
+      """
+      this.
+      """
+
+  'return':
+    'prefix': 'ret'
+    'body':
+      """
+      return $0
+      """
+
+
+  '.function(params)':
+    'prefix': 'pp'
+    'body':
+      """
+      ${1:name}($0);
+      """
+
+  '{ };':
+    'prefix': 'bb'
+    'body':
+      """
+      {$0};
+      """
+
+
+  'if (single line)':
+    'prefix': 'ifs'
+    'body':
+      """
+      if (${1:condition}) $0;
+      """
+
+
+  'forEach':
+    'prefix': 'ffe'
+    'body':
+      """
+      forEach((item) => {$0});
+      """
+
+
+
+
+
   'module-exports':
     'prefix': 'me'
     'body':
       """
       module.exports = $0
+      """
+
+
+  'Comment(JS)':
+    'prefix': 'q'
+    'body':
+      """
+      // $0
+      """
+
+
+  'Comment(JS) - Multiline':
+    'prefix': 'qq'
+    'body':
+      """
+      /*
+      $0
+      */
       """
 
 
@@ -28,6 +95,15 @@
       """
       console.log('${1:title}', ${2:$1}$0);
       """
+
+
+  'console.log (simple)':
+    'prefix': 'lll'
+    'body':
+      """
+      console.log($0);
+      """
+
 
   'console.log - New Line':
     'prefix': 'ln'

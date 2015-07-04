@@ -1,0 +1,22 @@
+'.source.js':
+  'import':
+    'prefix': 'imp'
+    'body':
+      """
+      import ${1:module} from '${2:module}';$0
+      """
+
+
+  'import: expect':
+    'prefix': 'impe'
+    'body':
+      """
+      import { expect } from 'chai';
+      """
+
+  'import: lodash':
+    'prefix': 'impl'
+    'body':
+      """
+      import _ from 'lodash';
+      """
