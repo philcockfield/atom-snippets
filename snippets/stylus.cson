@@ -1,7 +1,7 @@
 '.source.stylus':
 
-  'stylus: bg':
-    'prefix': 'bg'
+  'stylus: bgred':
+    'prefix': 'bgred'
     'body': "background $RED"
 
 

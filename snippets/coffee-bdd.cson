@@ -30,12 +30,18 @@
 
   'Before Each (BDD)':
     'prefix': 'be'
-    'body': """beforeEach -> $0"""
+    'body':
+      """
+      beforeEach -> $0
+      """
 
 
   'Before (BDD)':
     'prefix': 'before'
-    'body': """before -> $0"""
+    'body':
+      """
+      before -> $0
+      """
 
 
   'Describe (BDD)':

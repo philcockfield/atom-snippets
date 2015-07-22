@@ -13,3 +13,71 @@
       """
       <${1:tag}/>$0
       """
+
+
+  'destrucring assignment':
+    'prefix': 'da'
+    'body':
+      """
+      let { ${1} } = ${2:this.props};$0
+      """
+
+
+
+  'jsx':
+    'prefix': 'jsx'
+    'body':
+      """
+      import React from 'react';
+
+
+      /**
+       * $0
+       */
+      export default class ${1:Name} extends React.Component {
+        constructor(props) {
+          super(props);
+        }
+
+        render() {
+          return (
+            <div>${1:Name}</div>
+          );
+        }
+      }
+
+
+      ${1:Name}.propTypes = {};
+      ${1:Name}.defaultProps = {};
+      """
+
+
+  'React: PropType':
+    'prefix': 'rpt'
+    'body':
+      """
+      ${1:propName}: ${2:React.}PropTypes.$0,
+      """
+
+
+  'React: className':
+    'prefix': 'cln'
+    'body':
+      """
+      className='${1:name}'$0
+      """
+
+
+  'React Lifecycle Methods':
+    'prefix': 'rrlife'
+    'body':
+      """
+      componentWillMount() {}
+      componentDidMount() {}
+      componentWillReceiveProps(nextProps) {}
+      shouldComponentUpdate(nextProps, nextState) {}
+      componentWillUpdate(nextProps, nextState) {}
+      componentDidUpdate(prevProps, prevState) {}
+      componentWillUnmount() {}
+
+      """

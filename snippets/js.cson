@@ -1,10 +1,29 @@
 '.source.js':
+
   'use-strict':
     'prefix': 'us'
     'body':
       """
       'use strict'
       """
+
+
+  'debugger':
+    'prefix': 'deb'
+    'body':
+      """
+      debugger;
+      """
+
+
+
+  'undefined':
+    'prefix': 'und'
+    'body':
+      """
+      undefined
+      """
+
 
   'this.':
     'prefix': 'th'
@@ -40,7 +59,7 @@
     'prefix': 'ifs'
     'body':
       """
-      if (${1:condition}) $0;
+      if (${1:condition}) { $0; }
       """
 
 
@@ -48,10 +67,15 @@
     'prefix': 'ffe'
     'body':
       """
-      forEach((item) => {$0});
+      forEach(${1:item} => {$0});
       """
 
-
+  'map':
+    'prefix': 'map'
+    'body':
+      """
+      map(${1:item} => {$0});
+      """
 
 
 
@@ -63,59 +87,9 @@
       """
 
 
-  'Comment(JS)':
-    'prefix': 'q'
+  'util.delay':
+    'prefix': 'ud'
     'body':
       """
-      // $0
-      """
-
-
-  'Comment(JS) - Multiline':
-    'prefix': 'qq'
-    'body':
-      """
-      /*
-      $0
-      */
-      """
-
-
-  'Comment(JS) - Horizontal Rule':
-    'prefix': 'hr'
-    'body':
-      """
-      // ----------------------------------------------------------------------------
-      """
-
-
-  'console.log':
-    'prefix': 'll'
-    'body':
-      """
-      console.log('${1:title}', ${2:$1}$0);
-      """
-
-
-  'console.log (simple)':
-    'prefix': 'lll'
-    'body':
-      """
-      console.log($0);
-      """
-
-
-  'console.log - New Line':
-    'prefix': 'ln'
-    'body':
-      """
-      console.log('');
-      """
-
-
-  'console.log(---)':
-    'prefix': 'lhr'
-    'body':
-      """
-      console.log('-------------------------------------------');
+      util.delay($1() => {$0});
       """

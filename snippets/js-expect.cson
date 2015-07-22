@@ -15,14 +15,13 @@
       """
 
 
-
-
   'expect: NOT to.equal':
     'prefix': 'ene'
     'body':
       """
       expect(${1:value}).not.to.equal(${2:result});$0
       """
+
 
   'expect: NOT to.eql':
     'prefix': 'enee'
@@ -36,6 +35,14 @@
     'prefix': 'ett'
     'body':
       """
-      let fn = () => { $0 }
+      let fn = () => {$0};
       expect(fn).to.throw(/${1:error-text}/);
+      """
+
+
+  'expect: instanceof type':
+    'prefix': 'eit'
+    'body':
+      """
+      expect(${1:value}).to.be.an.instanceof(${2:Type});$0
       """

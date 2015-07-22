@@ -37,3 +37,43 @@
         $0
       });
       """
+
+  'Before Each (BDD)':
+    'prefix': 'be'
+    'body':
+      """
+      beforeEach(() => {$0});
+      """
+
+
+  'Before (BDD)':
+    'prefix': 'before'
+    'body':
+      """
+      before(() => {$0});
+      """
+
+
+
+  '.only':
+    'prefix': 'only'
+    'body':
+      """
+      only
+      """
+
+
+  'describe.only':
+    'prefix': 'describeo'
+    'body':
+      """
+      describe.only
+      """
+
+
+  'it.only':
+    'prefix': 'ito'
+    'body':
+      """
+      it.only
+      """
