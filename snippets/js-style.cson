@@ -1,0 +1,55 @@
+".source.js":
+  "style={[]}":
+    "prefix": "style"
+    "body":
+      """
+      style={[$0]}
+      """
+
+
+  "css: rgba":
+    "prefix": "col"
+    "body":
+      """
+      ${1:"}rgba(${2:0}, ${3:0}, ${4:0}, 0.${5:3})${1:"}$0
+      """
+
+
+  "css: RED(0.3)":
+    "prefix": "RED"
+    "body":
+      """
+      "rgba(255, 0, 0, 0.1)" //RED$0
+      """
+
+
+  "css: background":
+    "prefix": "bg"
+    "body":
+      """
+      background: $0
+      """
+
+
+  "css: background RED":
+    "prefix": "bgr"
+    "body":
+      """
+      background: "rgba(255, 0, 0, 0.1)" //RED $0
+      """
+
+
+  "css: border":
+    "prefix": "border"
+    "body":
+      """
+      border: "solid 1px rgba(0, 0, 0, 0.${1:3})"$0
+      """
+
+
+  "css: absolute":
+    "prefix": "abs"
+    "body":
+      """
+      position: "absolute", left: 0, top: 0, right: 0, bottom: 0,
+      """

@@ -1,12 +1,12 @@
-'.source.js':
-  '=>':
-    'prefix': 'ff'
-    'body': '() => $0'
+".source.js":
+  "=>":
+    "prefix": "ff"
+    "body": "() => $0"
 
-  '(args) =>':
-    'prefix': 'fa'
-    'body': '($1) => $0'
+  "(args) =>":
+    "prefix": "fa"
+    "body": "($1) => $0"
 
-  '(args) function':
-    'prefix': 'ffn'
-    'body': 'function($1) {$0}'
+  "(args) function":
+    "prefix": "ffn"
+    "body": "function($1) {$0}"

@@ -1,95 +1,95 @@
-'.source.js':
+".source.js":
 
-  'use-strict':
-    'prefix': 'us'
-    'body':
+  "use-strict":
+    "prefix": "us"
+    "body":
       """
-      'use strict'
+      "use strict"
       """
 
 
-  'debugger':
-    'prefix': 'deb'
-    'body':
+  "debugger":
+    "prefix": "deb"
+    "body":
       """
       debugger;
       """
 
 
 
-  'undefined':
-    'prefix': 'und'
-    'body':
+  "undefined":
+    "prefix": "und"
+    "body":
       """
       undefined
       """
 
 
-  'this.':
-    'prefix': 'th'
-    'body':
+  "this.":
+    "prefix": "th"
+    "body":
       """
       this.
       """
 
-  'return':
-    'prefix': 'ret'
-    'body':
+  "return":
+    "prefix": "ret"
+    "body":
       """
       return $0
       """
 
 
-  '.function(params)':
-    'prefix': 'pp'
-    'body':
+  ".function(params)":
+    "prefix": "pp"
+    "body":
       """
       ${1:name}($0);
       """
 
-  '{ };':
-    'prefix': 'bb'
-    'body':
+  "{ };":
+    "prefix": "bb"
+    "body":
       """
       {$0};
       """
 
 
-  'if (single line)':
-    'prefix': 'ifs'
-    'body':
+  "if (single line)":
+    "prefix": "ifs"
+    "body":
       """
       if (${1:condition}) { $0; }
       """
 
 
-  'forEach':
-    'prefix': 'ffe'
-    'body':
+  "forEach":
+    "prefix": "ffe"
+    "body":
       """
       forEach(${1:item} => {$0});
       """
 
-  'map':
-    'prefix': 'map'
-    'body':
+  "map":
+    "prefix": "map"
+    "body":
       """
       map(${1:item} => {$0});
       """
 
 
 
-  'module-exports':
-    'prefix': 'me'
-    'body':
+  "module-exports":
+    "prefix": "me"
+    "body":
       """
       module.exports = $0
       """
 
 
-  'util.delay':
-    'prefix': 'ud'
-    'body':
+  "util.delay":
+    "prefix": "ud"
+    "body":
       """
       util.delay($1() => {$0});
       """

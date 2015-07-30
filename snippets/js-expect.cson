@@ -1,48 +1,48 @@
-'.source.js':
+".source.js":
 
-  'expect: to.equal':
-    'prefix': 'exe'
-    'body':
+  "expect: to.equal":
+    "prefix": "exe"
+    "body":
       """
       expect(${1:value}).to.equal(${2:result});$0
       """
 
-  'expect: to.eql':
-    'prefix': 'exee'
-    'body':
+  "expect: to.eql":
+    "prefix": "exee"
+    "body":
       """
       expect(${1:value}).to.eql(${2:result});$0
       """
 
 
-  'expect: NOT to.equal':
-    'prefix': 'ene'
-    'body':
+  "expect: NOT to.equal":
+    "prefix": "ene"
+    "body":
       """
       expect(${1:value}).not.to.equal(${2:result});$0
       """
 
 
-  'expect: NOT to.eql':
-    'prefix': 'enee'
-    'body':
+  "expect: NOT to.eql":
+    "prefix": "enee"
+    "body":
       """
       expect(${1:value}).not.to.eql(${2:result});$0
       """
 
 
-  'expect: to throw':
-    'prefix': 'ett'
-    'body':
+  "expect: to throw":
+    "prefix": "ett"
+    "body":
       """
       let fn = () => {$0};
       expect(fn).to.throw(/${1:error-text}/);
       """
 
 
-  'expect: instanceof type':
-    'prefix': 'eit'
-    'body':
+  "expect: instanceof type":
+    "prefix": "eit"
+    "body":
       """
       expect(${1:value}).to.be.an.instanceof(${2:Type});$0
       """

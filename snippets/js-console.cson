@@ -1,31 +1,31 @@
-'.source.js':
-  'console.log':
-    'prefix': 'll'
-    'body':
+".source.js":
+  "console.log":
+    "prefix": "ll"
+    "body":
       """
-      console.log('${1:title}', ${2:$1}$0);
+      console.log("${1:title}", ${2:$1});
       """
 
 
-  'console.log (simple)':
-    'prefix': 'lll'
-    'body':
+  "console.log (simple)":
+    "prefix": "lll"
+    "body":
       """
       console.log($0);
       """
 
 
-  'console.log - New Line':
-    'prefix': 'ln'
-    'body':
+  "console.log - New Line":
+    "prefix": "ln"
+    "body":
       """
-      console.log('');
+      console.log("");
       """
 
 
-  'console.log - HR':
-    'prefix': 'lhr'
-    'body':
+  "console.log - HR":
+    "prefix": "lhr"
+    "body":
       """
-      console.log('-------------------------------------------');
+      console.log("-------------------------------------------");
       """

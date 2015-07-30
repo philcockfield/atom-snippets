@@ -1,79 +1,79 @@
-'.source.js':
-  'Describe (BDD)':
-    'prefix': 'des'
-    'body':
+".source.js":
+  "Describe (BDD)":
+    "prefix": "des"
+    "body":
       """
-      describe('${1:suite}', () => {
+      describe("${1:suite}", () => {
         $0
       });
       """
 
 
-  'Describe (BDD:Async)':
-    'prefix': 'dess'
-    'body':
+  "Describe (BDD:Async)":
+    "prefix": "dess"
+    "body":
       """
-      describe('${1:suite}', (done) => {
+      describe("${1:suite}", (done) => {
         $0
       });
       """
 
 
-  'it (BDD)':
-    'prefix': 'it'
-    'body':
+  "it (BDD)":
+    "prefix": "it"
+    "body":
       """
-      it('${1:does}', () => {
+      it("${1:does}", () => {
         $0
       });
       """
 
 
-  'it (BDD:async)':
-    'prefix': 'itd'
-    'body':
+  "it (BDD:async)":
+    "prefix": "itd"
+    "body":
       """
-      it('${1:does}', (done) => {
+      it("${1:does}", (done) => {
         $0
       });
       """
 
-  'Before Each (BDD)':
-    'prefix': 'be'
-    'body':
+  "Before Each (BDD)":
+    "prefix": "be"
+    "body":
       """
       beforeEach(() => {$0});
       """
 
 
-  'Before (BDD)':
-    'prefix': 'before'
-    'body':
+  "Before (BDD)":
+    "prefix": "before"
+    "body":
       """
       before(() => {$0});
       """
 
 
 
-  '.only':
-    'prefix': 'only'
-    'body':
+  ".only":
+    "prefix": "only"
+    "body":
       """
       only
       """
 
 
-  'describe.only':
-    'prefix': 'describeo'
-    'body':
+  "describe.only":
+    "prefix": "describeo"
+    "body":
       """
       describe.only
       """
 
 
-  'it.only':
-    'prefix': 'ito'
-    'body':
+  "it.only":
+    "prefix": "ito"
+    "body":
       """
       it.only
       """

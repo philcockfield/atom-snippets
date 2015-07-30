@@ -1,24 +1,24 @@
-'.source.js':
-  'Comment':
-    'prefix': 'q'
-    'body':
+".source.js":
+  "Comment":
+    "prefix": "q"
+    "body":
       """
       // $0
       """
 
 
-  'Comment - Multiline':
-    'prefix': 'qq'
-    'body':
+  "Comment - Multiline":
+    "prefix": "qq"
+    "body":
       """
       /*
       $0
       */
       """
 
-  'Comment - Docs':
-    'prefix': 'qd'
-    'body':
+  "Comment - Docs":
+    "prefix": "qd"
+    "body":
       """
       /**
        * $0
@@ -26,56 +26,56 @@
       """
 
 
-  'Comment - Documentation Line (*)':
-    'prefix': 's'
-    'body':
+  "Comment - Documentation Line (*)":
+    "prefix": "s"
+    "body":
       """
       * $0
       """
 
-  'Comment - @param':
-    'prefix': 'pm'
-    'body':
+  "Comment - @param":
+    "prefix": "pm"
+    "body":
       """
       * @param {${1:type}} $0
       """
 
-  'Comment - @return':
-    'prefix': 'pr'
-    'body':
+  "Comment - @return":
+    "prefix": "pr"
+    "body":
       """
       * @return $0
       """
 
 
-  'Comment - Horizontal Rule':
-    'prefix': 'hr'
-    'body':
+  "Comment - Horizontal Rule":
+    "prefix": "hr"
+    "body":
       """
       // ----------------------------------------------------------------------------
       """
 
 
 
-  'Comment - Setup initial conditions':
-    'prefix': 'setup'
-    'body':
+  "Comment - Setup initial conditions":
+    "prefix": "setup"
+    "body":
       """
       // Setup initial conditions.
       """
 
 
-  'Comment - Finish up':
-    'prefix': 'fin'
-    'body':
+  "Comment - Finish up":
+    "prefix": "fin"
+    "body":
       """
       // Finish up.
       """
 
 
-  'Comment - TEMP':
-    'prefix': 'temp'
-    'body':
+  "Comment - TEMP":
+    "prefix": "temp"
+    "body":
       """
       // TEMP $0
       """
