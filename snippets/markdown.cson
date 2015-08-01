@@ -1,0 +1,10 @@
+".source.gfm":
+
+  "js":
+    "prefix": "js"
+    "body":
+      """
+      ```js
+      $0
+      ```
+      """

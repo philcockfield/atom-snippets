@@ -19,7 +19,17 @@
     "prefix": "da"
     "body":
       """
-      let { ${1} } = ${2:this.props};$0
+      const { ${1} } = ${2:this.props};$0
+      """
+
+
+  "constructor":
+    "prefix": "ctr"
+    "body":
+      """
+      constructor(props) {
+        super(props);$0
+      }
       """
 
 
@@ -46,14 +56,14 @@
         }
       }
 
-      // -----------------------------------------------------------------------------
+      // API -------------------------------------------------------------------------
       ${1:Name}.propTypes = {};
       ${1:Name}.defaultProps = {};
       """
 
 
   "jsx (Radian)":
-    "prefix": "jsxr"
+    "prefix": "jsxx"
     "body":
       """
       import React from "react";
@@ -83,7 +93,7 @@
         }
       }
 
-      // -----------------------------------------------------------------------------
+      // API -------------------------------------------------------------------------
       ${1:Name}.propTypes = {};
       ${1:Name}.defaultProps = {};
       """
@@ -106,7 +116,7 @@
 
 
   "React Lifecycle Methods":
-    "prefix": "rrlife"
+    "prefix": "life"
     "body":
       """
       componentWillMount() {}
@@ -117,4 +127,12 @@
       componentDidUpdate(prevProps, prevState) {}
       componentWillUnmount() {}
 
+      """
+
+
+  "React: findDOMNode()":
+    "prefix": "rdn"
+    "body":
+      """
+      React.findDOMNode(${1:component});$0
       """

@@ -16,6 +16,15 @@
       */
       """
 
+  "Comment - Single Line (JSX)":
+    "prefix": "qqq"
+    "body":
+      """
+      {/* $0 */}
+      """
+
+
+
   "Comment - Docs":
     "prefix": "qd"
     "body":
