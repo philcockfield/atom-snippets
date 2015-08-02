@@ -68,6 +68,7 @@
       """
       import React from "react";
       import Radium from "radium";
+      import { css } from "js-util/react";
 
 
       /**
@@ -80,9 +81,9 @@
         }
 
         styles() {
-          return {
+          return css({
             base: {}
-          };
+          });
         }
 
         render() {

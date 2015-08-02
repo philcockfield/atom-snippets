@@ -27,8 +27,18 @@
     "prefix": "impu"
     "body":
       """
-      import util from "js-util";
+      import * as util from "js-util";
       """
+
+
+  "import: react/css":
+    "prefix": "impcss"
+    "body":
+      """
+      import { css } from "js-util/react";
+      """
+
+
 
 
   "import: react":

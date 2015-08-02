@@ -7,6 +7,15 @@
       """
 
 
+
+  "100%":
+    "prefix": "100"
+    "body":
+      """
+      "100%",
+      """
+
+
   "css: rgba":
     "prefix": "col"
     "body":
