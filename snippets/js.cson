@@ -8,6 +8,14 @@
       """
 
 
+  "const":
+    "prefix": "c"
+    "body":
+      """
+      const $0
+      """
+
+
   "debugger":
     "prefix": "deb"
     "body":

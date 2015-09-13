@@ -60,8 +60,16 @@
     "prefix": "abs"
     "body":
       """
+      Absolute: ${1:"${2}"},$0
+      """
+
+  "css: absolute (full)":
+    "prefix": "abss"
+    "body":
+      """
       position: "absolute", left: 0, top: 0, right: 0, bottom: 0,
       """
+
 
 
   "css: relative":

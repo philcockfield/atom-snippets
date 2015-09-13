@@ -3,7 +3,7 @@
     "prefix": "des"
     "body":
       """
-      describe("${1:suite}", () => {
+      describe("${1:suite}", function() {
         $0
       });
       """
@@ -13,7 +13,7 @@
     "prefix": "dess"
     "body":
       """
-      describe("${1:suite}", (done) => {
+      describe("${1:suite}", function(done) {
         $0
       });
       """
@@ -23,20 +23,35 @@
     "prefix": "it"
     "body":
       """
-      it("${1:does}", () => {
-        $0
-      });
+      it("${1:does}", () => {$0});
       """
+
+  "it (`code`)":
+    "prefix": "itc"
+    "body":
+      """
+      it("`${1:does}`", () => {$0});
+      """
+
+
+
+
+  "it (function)":
+    "prefix": "itt"
+    "body":
+      """
+      it("${1:does}", function() {$0});
+      """
+
 
 
   "it (BDD:async)":
     "prefix": "itd"
     "body":
       """
-      it("${1:does}", (done) => {
-        $0
-      });
+      it("${1:does}", (done) => {$0});
       """
+
 
   "Before Each (BDD)":
     "prefix": "be"
@@ -51,6 +66,22 @@
     "body":
       """
       before(() => {$0});
+      """
+
+
+  "After Each (BDD)":
+    "prefix": "ae"
+    "body":
+      """
+      afterEach(() => {$0});
+      """
+
+
+  "After (BDD)":
+    "prefix": "after"
+    "body":
+      """
+      after(() => {$0});
       """
 
 
@@ -71,9 +102,36 @@
       """
 
 
+  "describe.skip":
+    "prefix": "describes"
+    "body":
+      """
+      describe.skip
+      """
+
+
   "it.only":
     "prefix": "ito"
     "body":
       """
       it.only
+      """
+
+
+  "it.skip":
+    "prefix": "its"
+    "body":
+      """
+      it.skip
+      """
+
+
+
+  "section":
+    "prefix": "section"
+    "body":
+      """
+      section("${1:name}", () => {
+        $0
+      });
       """

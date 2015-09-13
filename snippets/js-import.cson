@@ -35,7 +35,7 @@
     "prefix": "impcss"
     "body":
       """
-      import { css } from "js-util/react";
+      import { css, PropTypes } from "js-util/react";
       """
 
 
@@ -55,4 +55,12 @@
     "body":
       """
       import Immutable from "immutable";
+      """
+
+
+  "import: test":
+    "prefix": "imptest"
+    "body":
+      """
+      import { lorem } from "js-util/test";
       """
