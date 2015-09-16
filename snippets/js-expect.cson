@@ -46,3 +46,11 @@
       """
       expect(${1:value}).to.be.an.instanceof(${2:Type});$0
       """
+
+
+  "expect: include":
+    "prefix": "exi"
+    "body":
+      """
+      expect(${1:value}).to.include("${2:text}");$0
+      """
