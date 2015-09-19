@@ -23,6 +23,14 @@
       """
 
 
+  "import: ramda":
+    "prefix": "impr"
+    "body":
+      """
+      import R from "ramda";
+      """
+
+
   "import: util":
     "prefix": "impu"
     "body":
