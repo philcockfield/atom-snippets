@@ -24,7 +24,7 @@
 
 
   "import: ramda":
-    "prefix": "impr"
+    "prefix": "impra"
     "body":
       """
       import R from "ramda";

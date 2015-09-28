@@ -29,3 +29,19 @@
       """
       console.log("-------------------------------------------");
       """
+
+
+  "console.warn":
+    "prefix": "lw"
+    "body":
+      """
+      console.warn($0);
+      """
+
+
+  "console.error":
+    "prefix": "le"
+    "body":
+      """
+      console.error($0);
+      """
