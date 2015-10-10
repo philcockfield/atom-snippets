@@ -124,10 +124,10 @@
 
 
   "React: findDOMNode()":
-    "prefix": "rdn"
+    "prefix": "fdn"
     "body":
       """
-      React.findDOMNode(${1:component});$0
+      ReactDOM.findDOMNode(${1:component});$0
       """
 
 
