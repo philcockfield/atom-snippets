@@ -72,3 +72,11 @@
       """
       import { lorem } from "js-util/test";
       """
+
+
+  "import: Foo":
+    "prefix": "impfoo"
+    "body":
+      """
+      import Foo from "react-atoms/components/Foo";
+      """
