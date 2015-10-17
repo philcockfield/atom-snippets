@@ -141,3 +141,12 @@
         $0
       });
       """
+
+
+
+  "header":
+    "prefix": "header"
+    "body":
+      """
+      this.header(`## $0`);
+      """
