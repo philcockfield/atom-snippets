@@ -8,3 +8,17 @@
       $0
       ```
       """
+
+
+  "Changelog: [Unreleased]":
+    "prefix": "unreleased"
+    "body":
+      """
+      ## [Unreleased]
+      #### Added
+      #### Changed
+      #### Deprecated
+      #### Removed
+      #### Fixed
+      #### Security
+      """

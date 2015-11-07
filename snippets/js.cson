@@ -119,13 +119,3 @@
       """
       util.delay($1() => {$0});
       """
-
-
-  "return Promise":
-    "prefix": "retp"
-    "body":
-      """
-      return new Promise((resolve, reject) => {
-        $0
-      });
-      """
