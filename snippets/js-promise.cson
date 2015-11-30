@@ -23,3 +23,22 @@
       """
       catch(${1:err} => {$2});
       """
+
+
+  ".catch (reject)":
+    "prefix": "catchr"
+    "body":
+      """
+      catch(${1:err} => reject(${1:err}));
+      """
+
+
+
+  "coroutine":
+    "prefix": "coroutine"
+    "body":
+      """
+      Promise.coroutine(function*() {
+        $0
+      }).call(this);
+      """

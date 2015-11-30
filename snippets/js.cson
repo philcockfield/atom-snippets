@@ -119,3 +119,10 @@
       """
       util.delay($1() => {$0});
       """
+
+  "yield":
+    "prefix": "y"
+    "body":
+      """
+      yield $0
+      """
