@@ -15,11 +15,11 @@
       """
 
 
-  "import: lodash":
-    "prefix": "impl"
+  "import: Promise":
+    "prefix": "impp"
     "body":
       """
-      import _ from "lodash";
+      import Promise from "bluebird";
       """
 
 
