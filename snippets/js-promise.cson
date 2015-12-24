@@ -39,6 +39,8 @@
     "body":
       """
       Promise.coroutine(function*() {
-        $0
+        try {
+          $0
+        } catch (err) { reject(err); }
       }).call(this);
       """
