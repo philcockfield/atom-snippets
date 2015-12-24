@@ -45,3 +45,11 @@
       """
       console.error($0);
       """
+
+
+  "console.trace":
+    "prefix": "trace"
+    "body":
+      """
+      console.trace();
+      """
