@@ -45,16 +45,15 @@
        * $0
        */
       export default class ${1:Name} extends React.Component {
+        static propTypes = {};
+        static defaultProps = {};
+
         render() {
           return (
             <div>${1:Name}</div>
           );
         }
       }
-
-      // API -------------------------------------------------------------------------
-      ${1:Name}.propTypes = {};
-      ${1:Name}.defaultProps = {};
       """
 
 
@@ -70,8 +69,10 @@
       /**
        * $0
        */
-      @Radium
-      export default class ${1:Name} extends React.Component {
+      class ${1:Name} extends React.Component {
+        static propTypes = {};
+        static defaultProps = {};
+
         styles() {
           return css({
             base: {}
@@ -86,9 +87,8 @@
         }
       }
 
-      // API -------------------------------------------------------------------------
-      ${1:Name}.propTypes = {};
-      ${1:Name}.defaultProps = {};
+
+      export default Radium({1:Name});
       """
 
 

@@ -1,0 +1,15 @@
+".source.js":
+  "export default":
+    "prefix": "ed"
+    "body":
+      """
+      export default $0
+      """
+
+
+  "export default Radium()":
+    "prefix": "edr"
+    "body":
+      """
+      export default Radium($0);
+      """

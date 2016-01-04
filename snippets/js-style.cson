@@ -28,7 +28,7 @@
     "prefix": "RED"
     "body":
       """
-      "rgba(255, 0, 0, 0.1)" //RED$0
+      "rgba(255, 0, 0, 0.1)" /* RED */ $0
       """
 
 
@@ -44,7 +44,7 @@
     "prefix": "bgr"
     "body":
       """
-      background: "rgba(255, 0, 0, 0.1)", //RED $0
+      background: "rgba(255, 0, 0, 0.1)", /* RED */ $0
       """
 
 
