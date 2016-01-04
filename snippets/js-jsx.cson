@@ -92,6 +92,20 @@
       """
 
 
+
+
+  "React: Static Prop Types":
+    "prefix": "rsp"
+    "body":
+      """
+      static propTypes = {$0};
+      static defaultProps = {};
+      """
+
+
+
+
+
   "React: PropType":
     "prefix": "rpt"
     "body":
