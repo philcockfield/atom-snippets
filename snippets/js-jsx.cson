@@ -88,7 +88,7 @@
       }
 
 
-      export default Radium({1:Name});
+      export default Radium(${1:Name});
       """
 
 
