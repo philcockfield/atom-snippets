@@ -53,3 +53,18 @@
       """
       console.trace();
       """
+
+
+
+
+  "log.info":
+    "prefix": "lli"
+    "body": "log.info($0);"
+
+  "log.warn":
+    "prefix": "llw"
+    "body": "log.warn($0);"
+
+  "log.error":
+    "prefix": "lle"
+    "body": "log.error($0);"
