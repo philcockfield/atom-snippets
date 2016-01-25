@@ -3,7 +3,7 @@
     "prefix": "des"
     "body":
       """
-      describe("${1:suite}", function() {
+      describe(${1:suite}', function() {
         $0
       });
       """
@@ -13,7 +13,7 @@
     "prefix": "dess"
     "body":
       """
-      describe("${1:suite}", function(done) {
+      describe(${1:suite}', function(done) {
         $0
       });
       """
@@ -23,21 +23,21 @@
     "prefix": "it"
     "body":
       """
-      it("${1:does}", () => {$0});
+      it('${1:does}', () => {$0});
       """
 
   "it (`code`)":
     "prefix": "itc"
     "body":
       """
-      it("`${1:does}`", () => {$0});
+      it('`${1:does}`', () => {$0});
       """
 
   "it (props)":
     "prefix": "itp"
     "body":
       """
-      it("`${1:does}`", () => this.props({ $0 }));
+      it('`${1:does}`', () => this.props({ $0 }));
       """
 
 
@@ -46,7 +46,7 @@
     "prefix": "itt"
     "body":
       """
-      it("${1:does}", function() {$0});
+      it('${1:does}', function() {$0});
       """
 
 
@@ -55,7 +55,7 @@
     "prefix": "itd"
     "body":
       """
-      it("${1:does}", (done) => {$0});
+      it('${1:does}', (done) => {$0});
       """
 
 
@@ -137,7 +137,7 @@
     "prefix": "section"
     "body":
       """
-      section("${1:name}", () => {
+      section('${1:name}', () => {
         $0
       });
       """
