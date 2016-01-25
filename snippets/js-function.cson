@@ -3,9 +3,19 @@
     "prefix": "ff"
     "body": "() => $0"
 
+
+
   "(args) =>":
     "prefix": "fa"
     "body": "($1) => $0"
+
+
+
+  "(args) => {Promise}":
+    "prefix": "fp"
+    "body": "($1) => new Promise((resolve, reject) => {$0});"
+
+
 
   "(args) function":
     "prefix": "ffn"

@@ -3,7 +3,7 @@
     "prefix": "des"
     "body":
       """
-      describe(${1:suite}', function() {
+      describe('${1:suite}', function() {
         $0
       });
       """
@@ -13,7 +13,7 @@
     "prefix": "dess"
     "body":
       """
-      describe(${1:suite}', function(done) {
+      describe('${1:suite}', function(done) {
         $0
       });
       """
