@@ -38,7 +38,7 @@
     "prefix": "jsx"
     "body":
       """
-      import React from "react";
+      import React from 'react';
 
 
       /**
@@ -61,9 +61,9 @@
     "prefix": "jsxx"
     "body":
       """
-      import React from "react";
-      import Radium from "radium";
-      import { css, PropTypes } from "js-util/react";
+      import React from 'react';
+      import Radium from 'radium';
+      import { css, PropTypes } from './util';
 
 
       /**

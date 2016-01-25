@@ -3,20 +3,12 @@
     "prefix": "rrr"
     "body":
       """
-      require("${1}");$0
+      require('${1}');$0
       """
 
   "require expect":
     "prefix": "reex"
     "body":
       """
-      var { expect } = require("chai");
-      """
-
-
-  "require lodash":
-    "prefix": "rel"
-    "body":
-      """
-      var _ = require("lodash");
+      var { expect } = require('chai');
       """

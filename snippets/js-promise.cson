@@ -38,7 +38,7 @@
     "prefix": "coroutine"
     "body":
       """
-      Promise.coroutine(function*() {
+      Promise.coroutine(function* await() {
         try {
           $0
         } catch (err) { reject(err); }
