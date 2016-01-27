@@ -120,9 +120,24 @@
       util.delay($1() => {$0});
       """
 
+
   "yield":
     "prefix": "y"
     "body":
       """
       yield $0
+      """
+
+
+
+  "try/catch":
+    "prefix": "try"
+    "body":
+      """
+      try {
+        $0
+      } catch (err) {
+
+      }
+
       """

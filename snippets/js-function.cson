@@ -20,3 +20,14 @@
   "(args) function":
     "prefix": "ffn"
     "body": "function($1) {$0}"
+
+
+
+  "async function (immediate)":
+    "prefix": "af"
+    "body":
+      """
+      (async () => {
+        $0
+      })();
+      """
