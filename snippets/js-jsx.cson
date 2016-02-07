@@ -75,7 +75,7 @@
 
         styles() {
           return css({
-            base: {}
+            base: {},
           });
         }
 
@@ -95,7 +95,7 @@
 
 
   "React: Static Prop Types":
-    "prefix": "rsp"
+    "prefix": "spt"
     "body":
       """
       static propTypes = {$0};

@@ -88,3 +88,12 @@
       """
       // TEMP $0
       """
+
+
+
+  "Comment - eslint":
+    "prefix": "clint"
+    "body":
+      """
+      /* eslint $0 */
+      """
