@@ -94,6 +94,32 @@
 
 
 
+  "React: Functional Component":
+    "prefix": "jsxf"
+    "body":
+      """
+      import React from 'react'
+      import { PropTypes } from './util';
+
+      /**
+       * $0
+       */
+      const ${1:Name} = ({ ${2:props} }) => (
+        <div>${1:Name}</div>
+      );
+
+      ${1:Name}.propTypes = {};
+
+
+      export default ${1:Name}
+      """
+
+
+
+
+
+
+
   "React: Static Prop Types":
     "prefix": "spt"
     "body":

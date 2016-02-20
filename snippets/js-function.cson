@@ -24,7 +24,7 @@
 
 
   "async function (immediate)":
-    "prefix": "af"
+    "prefix": "async"
     "body":
       """
       (async () => {

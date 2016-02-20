@@ -10,6 +10,17 @@
       """
 
 
+  "bash":
+    "prefix": "bash"
+    "body":
+      """
+      ```bash
+      $0
+      ```
+      """
+
+
+
   "Changelog: [Unreleased]":
     "prefix": "unreleased"
     "body":
