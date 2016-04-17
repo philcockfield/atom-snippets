@@ -104,16 +104,47 @@
       /**
        * $0
        */
-      const ${1:Name} = ({ ${2:props} }) => (
+      const ${1:Name} = ({ ${2:props} }) => {
         <div>${1:Name}</div>
-      );
+      };
 
       ${1:Name}.propTypes = {};
 
 
-      export default ${1:Name}
+      export default ${1:Name};
       """
 
+
+
+  "React: Functional Component (Radium)":
+    "prefix": "jsxff"
+    "body":
+      """
+      import React from 'react'
+      import Radium from 'radium';
+      import { css, PropTypes } from './util';
+
+
+
+      /**
+       * $0
+       */
+      const ${1:Name} = props => {
+        const styles = css({
+          base: {},
+        });
+
+        return (
+          <div style={ styles.base }>${1:Name}</div>
+        );
+      };
+
+      ${1:Name}.propTypes = {};
+      ${1:Name}.defaultProps = {};
+
+
+      export default Radium(${1:Name});
+      """
 
 
 
