@@ -11,7 +11,7 @@
     "prefix": "<<"
     "body":
       """
-      <${1:tag}/>$0
+      <${1:tag} />$0
       """
 
 
@@ -98,7 +98,7 @@
     "prefix": "jsxf"
     "body":
       """
-      import React from 'react'
+      import React from 'react';
       import { PropTypes } from './util';
 
       /**
@@ -120,7 +120,7 @@
     "prefix": "jsxff"
     "body":
       """
-      import React from 'react'
+      import React from 'react';
       import Radium from 'radium';
       import { css, PropTypes } from './util';
 
