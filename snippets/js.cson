@@ -1,4 +1,4 @@
-".source.js":
+".source.js, .source.ts, .source.tsx":
 
   "use-strict":
     "prefix": "us"
@@ -13,6 +13,23 @@
     "body":
       """
       const $0
+      """
+
+
+  "export":
+    "prefix": "e"
+    "body":
+      """
+      export $0
+      """
+
+
+
+  "export const":
+    "prefix": "ec"
+    "body":
+      """
+      export const $0
       """
 
 
@@ -96,6 +113,18 @@
       """
 
 
+  "if/else":
+    "prefix": "ife"
+    "body":
+      """
+      if (${1:condition}) {
+        $0
+      } else {
+
+      }
+      """
+
+
   "forEach":
     "prefix": "ffe"
     "body":
@@ -110,6 +139,20 @@
       map(${1:item} => {$0});
       """
 
+  "filter":
+    "prefix": "filter"
+    "body":
+      """
+      filter(${1:item} => {$0});
+      """
+
+  "reduce":
+    "prefix": "reduce"
+    "body":
+      """
+      reduce((acc, value, i) => {$0}, ${1:initial});
+      """
+
 
 
   "module-exports":
@@ -119,21 +162,6 @@
       module.exports = $0
       """
 
-
-  "util.delay":
-    "prefix": "ud"
-    "body":
-      """
-      util.delay($1() => {$0});
-      """
-
-
-  "yield":
-    "prefix": "y"
-    "body":
-      """
-      yield $0
-      """
 
 
 
@@ -148,3 +176,33 @@
       }
 
       """
+
+
+
+  "switch":
+    "prefix": "switch"
+    "body":
+      """
+      switch (${1:value}) {
+        case ${2:expression}:
+          $0
+          break;
+        default:
+
+      }
+
+      """
+
+
+  "function":
+    "prefix": "fn"
+    "body":
+      """
+      ${1:export }${2:async }function ${3:name}($4) {
+        $0
+      }
+      """
+
+
+
+

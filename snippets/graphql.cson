@@ -1,0 +1,69 @@
+".source.js, .source.ts, .source.tsx":
+  "import GraphQL types":
+    "prefix": "impg"
+    "body":
+      """
+      /* tslint:disable: no-unused-variable */
+      import {
+        GraphQLBoolean,
+        GraphQLEnumType,
+        GraphQLFloat,
+        GraphQLID,
+        GraphQLInt,
+        GraphQLInterfaceType,
+        GraphQLList,
+        GraphQLNonNull,
+        GraphQLObjectType,
+        GraphQLScalarType,
+        GraphQLSchema,
+        GraphQLString,
+      } from 'graphql';
+      """
+
+
+
+  "GraphQLObjectType":
+    "prefix": "go"
+    "body":
+      """
+      export const ${1:TypeName} = new GraphQLObjectType({
+        name: '${1:TypeName}',
+        description: '$0',
+        fields: {
+        },
+      });
+      """
+
+
+
+  "GraphQL Field Type":
+    "prefix": "gf"
+    "body":
+      """
+      ${1:key}: { type: ${2:GraphQLString} },$0
+      """
+
+
+
+  "GraphQLList":
+    "prefix": "gl"
+    "body":
+      """
+      new GraphQLList(${1:GraphQLString})$0
+      """
+
+
+
+
+  "description":
+    "prefix": "desc"
+    "body":
+      """
+      description: '${1:description}',$0
+      """
+
+
+
+
+
+
