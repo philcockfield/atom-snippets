@@ -66,8 +66,8 @@
       import { css } from './util';
 
 
-      export interface I${1:Name}Props {};
-      export interface I${1:Name}State {};
+      export interface I${1:Name}Props {}
+      export interface I${1:Name}State {}
 
 
       /**
@@ -75,20 +75,20 @@
        */
       @Radium
       export default class ${1:Name} extends React.Component<I${1:Name}Props, I${1:Name}State> {
-        static propTypes = {};
-        static defaultProps = {};
+        public static propTypes = {};
+        public static defaultProps = {};
 
-        styles() {
-          return css({
-            base: {},
-          });
-        }
-
-        render() {
+        public render() {
           const styles = this.styles();
           return (
             <div style={ styles.base }>${1:Name}</div>
           );
+        }
+
+        private styles() {
+          return css({
+            base: {},
+          });
         }
       }
       """
