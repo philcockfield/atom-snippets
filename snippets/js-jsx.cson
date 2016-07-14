@@ -38,7 +38,7 @@
     "prefix": "jsx"
     "body":
       """
-      import React from 'react';
+      import * as React from 'react';
 
 
       /**
@@ -61,15 +61,20 @@
     "prefix": "jsxx"
     "body":
       """
-      import React from 'react';
-      import Radium from 'radium';
-      import { css, PropTypes } from './util';
+      import * as React from 'react';
+      import * as Radium from 'radium';
+      import { css } from './util';
+
+
+      export interface ${1:Name}Props {};
+      export interface ${1:Name}State {};
 
 
       /**
        * $0
        */
-      class ${1:Name} extends React.Component {
+      @Radium
+      export default class ${1:Name} extends React.Component<${1:Name}Props, ${1:Name}State> {
         static propTypes = {};
         static defaultProps = {};
 
@@ -86,9 +91,6 @@
           );
         }
       }
-
-
-      export default Radium(${1:Name});
       """
 
 
@@ -98,7 +100,7 @@
     "prefix": "jsxf"
     "body":
       """
-      import React from 'react';
+      import * as React from 'react';
       import { PropTypes } from './util';
 
       /**
@@ -122,8 +124,8 @@
     "prefix": "jsxff"
     "body":
       """
-      import React from 'react';
-      import Radium from 'radium';
+      import * as React from 'react';
+      import * as Radium from 'radium';
       import { css, PropTypes } from './util';
 
 
@@ -173,13 +175,6 @@
       """
 
 
-  "React: className":
-    "prefix": "cln"
-    "body":
-      """
-      className="${1:name}"$0
-      """
-
 
   "React Lifecycle Methods":
     "prefix": "life"
@@ -216,5 +211,8 @@
     "prefix": "cn"
     "body":
       """
-      className="${0}"
+      className='${0}'
       """
+
+
+
