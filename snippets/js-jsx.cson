@@ -66,15 +66,15 @@
       import { css } from './util';
 
 
-      export interface ${1:Name}Props {};
-      export interface ${1:Name}State {};
+      export interface I${1:Name}Props {};
+      export interface I${1:Name}State {};
 
 
       /**
        * $0
        */
       @Radium
-      export default class ${1:Name} extends React.Component<${1:Name}Props, ${1:Name}State> {
+      export default class ${1:Name} extends React.Component<I${1:Name}Props, I${1:Name}State> {
         static propTypes = {};
         static defaultProps = {};
 
