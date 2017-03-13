@@ -27,38 +27,15 @@
     "prefix": "ctr"
     "body":
       """
-      constructor(props) {
-        super(props);$0
+      constructor(${1:props}) {
+        ${2:super(${1:props});}$0
       }
       """
 
 
 
-  "jsx":
-    "prefix": "jsx"
-    "body":
-      """
-      import * as React from 'react';
-
-
-      /**
-       * $0
-       */
-      export default class ${1:Name} extends React.Component {
-        static propTypes = {};
-        static defaultProps = {};
-
-        render() {
-          return (
-            <div>${1:Name}</div>
-          );
-        }
-      }
-      """
-
-
-  "jsx (Radian)":
-    "prefix": "jsxx"
+  "tsx (Radian)":
+    "prefix": "tsx"
     "body":
       """
       import * as React from 'react';
@@ -67,15 +44,13 @@
 
 
       export interface I${1:Name}Props {}
-      export interface I${1:Name}State {}
 
 
       /**
        * $0
        */
       @Radium
-      export default class ${1:Name} extends React.Component<I${1:Name}Props, I${1:Name}State> {
-        public static propTypes = {};
+      export default class ${1:Name} extends React.Component<I${1:Name}Props, void> {
         public static defaultProps = {};
 
         public render() {
@@ -95,45 +70,23 @@
 
 
 
-
-  "React: Functional Component":
-    "prefix": "jsxf"
-    "body":
-      """
-      import * as React from 'react';
-      import { PropTypes } from './util';
-
-      /**
-       * $0
-       */
-      const ${1:Name} = ({ ${2:props} }) => {
-        return (
-          <div>${1:Name}</div>
-        );
-      };
-
-      ${1:Name}.propTypes = {};
-
-
-      export default ${1:Name};
-      """
-
-
-
-  "React: Functional Component (Radium)":
-    "prefix": "jsxff"
+  "tsx - Function (Radian)":
+    "prefix": "tsxf"
     "body":
       """
       import * as React from 'react';
       import * as Radium from 'radium';
-      import { css, PropTypes } from './util';
+      import { css } from './util';
 
+
+      export interface I${1:Name}Props {}
 
 
       /**
        * $0
        */
-      const ${1:Name} = props => {
+      const ${1:Name} = ({${2}}: I${1:Name}Props) => {
+
         const styles = css({
           base: {},
         });
@@ -142,26 +95,9 @@
           <div style={ styles.base }>${1:Name}</div>
         );
       };
-
-      ${1:Name}.propTypes = {};
-      ${1:Name}.defaultProps = {};
-
-
       export default Radium(${1:Name});
       """
 
-
-
-
-
-
-  "React: Static Prop Types":
-    "prefix": "spt"
-    "body":
-      """
-      static propTypes = {$0};
-      static defaultProps = {};
-      """
 
 
 

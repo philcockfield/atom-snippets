@@ -58,13 +58,29 @@
 
 
   "log.info":
+    "prefix": "li"
+    "body":
+      """
+      log.info('${1:title}', ${2:$1});
+      """
+
+  "log.info (simple)":
     "prefix": "lli"
-    "body": "log.info($0);"
+    "body":
+      """
+      log.info($0);
+      """
 
   "log.warn":
     "prefix": "llw"
-    "body": "log.warn($0);"
+    "body":
+      """
+      log.warn($0);
+      """
 
   "log.error":
     "prefix": "lle"
-    "body": "log.error($0);"
+    "body":
+      """
+      log.error($0);
+      """

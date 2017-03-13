@@ -3,7 +3,6 @@
     "prefix": "impg"
     "body":
       """
-      /* tslint:disable: no-unused-variable */
       import {
         GraphQLBoolean,
         GraphQLEnumType,
@@ -17,7 +16,8 @@
         GraphQLScalarType,
         GraphQLSchema,
         GraphQLString,
-      } from 'graphql';
+      }
+      from 'graphql';
       """
 
 
@@ -26,7 +26,7 @@
     "prefix": "go"
     "body":
       """
-      export const ${1:TypeName} = new GraphQLObjectType({
+      export const ${1:TypeName}Type = new GraphQLObjectType({
         name: '${1:TypeName}',
         description: '$0',
         fields: {

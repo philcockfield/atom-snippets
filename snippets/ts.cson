@@ -1,0 +1,34 @@
+".source.ts, .source.tsx":
+
+  "interface":
+    "prefix": "int"
+    "body":
+      """
+      export interface I${1:Name} {$0}
+      """
+
+
+  "tslint:disable":
+    "prefix": "tld"
+    "body":
+      """
+      /* tslint:disable $0 */
+      """
+
+
+  "async":
+    "prefix": "as"
+    "body":
+      """
+      async $0
+      """
+
+
+
+  "await":
+    "prefix": "a"
+    "body":
+      """
+      await $0
+      """
+

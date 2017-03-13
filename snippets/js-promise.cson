@@ -33,14 +33,3 @@
       """
 
 
-
-  "coroutine":
-    "prefix": "coroutine"
-    "body":
-      """
-      Promise.coroutine(function* await() {
-        try {
-          $0
-        } catch (err) { reject(err); }
-      }).call(this);
-      """
